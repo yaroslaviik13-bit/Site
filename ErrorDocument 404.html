@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ой! Страница не найдена (404)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e6f7ff 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #ff6f61;
+            margin: 0;
+            line-height: 1;
+            text-shadow: 3px 3px 0 rgba(255, 111, 97, 0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 1rem auto 2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        .home-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+        .home-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        .home-button i {
+            margin-right: 8px;
+        }
+        .error-icon {
+            font-size: 4rem;
+            color: #ff6f61;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        @media (max-width: 600px) {
+            .error-code { font-size: 6rem; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-icon">
+        <i class="fas fa-exclamation-triangle"></i>
+    </div>
+    <div class="error-code">404</div>
+    <h1>Страница потерялась в космосе</h1>
+    <p>К сожалению, страница, которую вы ищете, не существует или была перемещена. Проверьте адрес или вернитесь на главную.</p>
+    <a href="index.html" class="home-button">
+        <i class="fas fa-home"></i> На главную
+    </a>
+    <p style="margin-top: 3rem; font-size: 0.9em; color: #7f8c8d;">
+        Если проблема повторяется, <a href="mailto:support@example.com" style="color: #3498db;">свяжитесь с поддержкой</a>.
+    </p>
+</body>
+</html>
